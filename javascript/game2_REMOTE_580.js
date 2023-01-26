@@ -74,11 +74,7 @@ function checkIf5Points() {
   } else if (computerPoints >= 5) {
     playerPoints = 0;
     computerPoints = 0;
-<<<<<<< HEAD
-    let audioWin = document.getElementById(`loseAudio`);
-=======
     let audioLose = document.getElementById(`loseAudio`);
->>>>>>> rps-ui
     audioLose.play();
     return "Computer Wins This Duel!";
   } else {
