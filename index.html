@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<script src="javascript/game.js"></script>
-<body>
-    
-</body>
+  </head>
+  <script src="javascript/game2.js" defer></script>
+  <body>
+    <h1 class="titleName">Rock, Paper, Scissors</h1>
+    <div class="gameButtons">
+      <div>
+        <img
+          class="imageGame"
+          name="1"
+          src="https://mywrestling.com.pl/wp-content/uploads/2018/06/the-rock5.jpg"
+        />
+        <audio id="1Audio">
+            <source src="sounds/rock.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+      </div>
+      <div>
+        <img
+          class="imageGame"
+          name="2"
+          src="https://m.media-amazon.com/images/I/31RwZPpkmmL._AC_SY580_.jpg"
+        />
+        <audio id="2Audio">
+            <source src="sounds/paper.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+      </div>
+      <div>
+        <img
+          class="imageGame"
+          name="3"
+          src="https://www.orteo.pl/img/imagecache/6001-7000/219e7e39870ccd4662de096395478ec4b0214d1a.png"
+        />
+        <audio id="3Audio">
+            <source src="sounds/scissors.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+      </div>
+    </div>
+    <div class="results">
+      <div class="roundResult">
+        <p class="gameText">
+          Player chose
+          <b id="playerChoice">X</b>
+        </p>
+        <p class="gameText">
+          Computer chose
+          <b id="computerChoice">X</b>
+        </p>
+
+        <p class="gameText">
+          Result:
+          <b id="result">X</b>
+        </p>
+      </div>
+      <div class="duelResults">
+        <p class="gameText">
+          <b id="playerPoints">X</b>
+        :
+          <b id="computerPoints">X</b>
+        </p>
+
+        <p class="gameText">
+          Duel Result:
+          <b id="duelResult">X</b>
+        </p>
+        <audio id="loseAudio">
+            <source src="sounds/lose.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <audio id="winAudio">
+            <source src="sounds/win.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+      </div>
+    </div>
+  </body>
 </html>
