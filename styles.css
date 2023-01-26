@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+*{
+    margin: 10px auto;
+}
+
+body{
+    background-color: #E4D486;
+}
+
+.titleName {
+  font-family: "Caveat", cursive;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #96E486;
+  margin: 0px;
+  line-height: 100px;
+}
+
+.gameButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.gameButtons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageGame {
+  border: 1px solid rgb(4, 4, 4);
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  transition: 0.7s;
+}
+
+.imageGame:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+
+#playerChoice,
+#computerChoice,
+#result,
+#playerPoints,
+#computerPoints {
+  font-family: "Caveat", cursive;
+}
+
+.gameText {
+  font-family: "Caveat", cursive;
+  font-size: 35px;
+}
+
+.roundResult, .duelResults{
+    text-align: center;
+    border: 1px black solid;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #C5E486;
+    width: 50vw;
+}
+
+.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
